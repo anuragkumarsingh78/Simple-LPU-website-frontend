@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <style>
+        body {
+            background-color: rgb(247, 239, 230);
+        }
+
+
+        body,
+        nav,
+        header {
+            margin: 0px;
+        }
+
+
+
+
+
+        .logoarea {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .logoarea img {
+            margin: 20px;
+        }
+
+        nav {
+            margin-top: 10px;
+            padding: 3px;
+            background-color: rgb(240, 148, 9);
+        }
+
+
+        header nav ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+        }
+
+        header nav li a {
+            padding: 30px;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(118, 118, 118);
+        }
+
+        a:hover {
+            font-size: 25px;
+            padding: 15px;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:active {
+            color: black;
+            font-size: 30px;
+        }
+
+        .intro {
+            margin: 50px;;
+        }
+        section figure img{
+            margin-top: 300px;
+            display: block;
+            margin: auto;
+        }
+
+        .form{
+            margin-top:100px ;
+            margin-left:500px;
+            margin-right: 500px;
+            margin-bottom: 200px;
+            font-size: 18px;
+            color:rgb(126, 148, 90)
+        }
+
+        .form fieldset{
+            background-color: white;
+            padding: 20px;
+
+        }
+
+        .form input{
+            border: none;
+            border-bottom: 2px solid rgb(240, 148, 9);
+            
+        }
+
+        #submit{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            justify-self: center;
+            padding: 10px;
+            font-size: 18px;
+            background-color:rgb(240, 148, 9) ;
+            width: 95%;
+            color:white;
+        }
+
+        #submit:hover{
+            background-color:rgb(201, 124, 8) ;
+        }
+
+        footer{
+            margin: 0px;
+            background-color: dimgray;
+            padding:10px;
+        }
+
+        footer ul{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        footer li{
+            padding:15px;  
+            font-size:19px;
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logoarea" <figure>
+            <img src="Resources/lpu.jpg" width="200px" alt="Lpu icon">
+            </figure>
+            <h1>Lovely Proffesional University</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Academics</a></li>
+                <li><a href="">Admission</a></li>
+                <li><a href="">Research</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <figure>
+                <img src="Resources/lpu campus.jpg" alt="lpu campus" width="800px">
+
+            </figure>
+        </section>
+
+        <section class="form">
+
+            <h2>Apply Now!</h2>
+            <form>
+                <fieldset>
+                    <legend>Fill up your details</legend><br>
+                    <label for="fname">Name*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="fname" name="fname" placeholder="Name" required size="40"><br><br>
+
+                    <label for="lname">Last Name:&nbsp;</label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" size="40"><br><br>
+
+                    <label for="email">Email Id*:&nbsp;&nbsp;</label>
+                    <input type="email" name="email" id="email" required placeholder="Email id" size="40"><br><br>
+
+                    <label for="dob">Date of birth:</label>
+                    <input type="date" min="1998-12-31" max="2010-01-01" id="dob" name="dob" ><br><br>
+
+                    <input type="checkbox" name="accept" id="accept" required>
+                    <label for="accept">You accept our policy and guidelines*</label> <br><br><br>
+
+                    <input id='submit'type="submit">
+
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <ul>
+            <li>&copy; 2025 LPU</li>
+            <li>Contact us</li>
+            <li>Privacy Policy</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
